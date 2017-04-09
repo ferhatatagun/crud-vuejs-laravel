@@ -9,6 +9,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/selam', function () {
+    return view('welcome');
+});
+Route::get('/as', function () {
+    return view('welcome');
+});
 Route::group(['middleware'=> ['web']],function() {
   Route::get('/VueJsCrud','BlogController@VueJsCrud');
   Route::resource('vueitems','BlogController');
